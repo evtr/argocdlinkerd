@@ -506,7 +506,6 @@ metadata:
   name: web-svc
   namespace: emojivoto
 spec:
-  type: LoadBalancer
   selector:
     app: web-svc
   ports:
