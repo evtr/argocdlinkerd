@@ -508,6 +508,7 @@ metadata:
 spec:
   selector:
     app: web-svc
+  clusterIP: None
   ports:
   - name: http
     port: 80
