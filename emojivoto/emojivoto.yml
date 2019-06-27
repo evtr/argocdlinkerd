@@ -660,3 +660,18 @@ spec:
         name: linkerd-identity-end-entity
 status: {}
 ---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: web-ingress
+  namespace: emojivoto
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: emojivoto.kitkube.dk
+    http:
+      paths:
+      - backend:
+          serviceName: web-svc
+          servicePort: HTTP
