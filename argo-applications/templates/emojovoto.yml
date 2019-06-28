@@ -1,10 +1,18 @@
-source:
-  repoURL: 'https://github.com/evtr/argocdlinkerd'
-  path: emojivoto
-  targetRevision: HEAD
-destination:
-  server: 'https://kubernetes.default.svc'
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: emojivoto
   namespace: emojivoto
-project: default
-syncPolicy: {}
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  source:
+    repoURL: 'https://github.com/evtr/argocdlinkerd'
+    path: emojivoto
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: emojivoto
+  project: default
+  syncPolicy: {}
 
