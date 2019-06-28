@@ -1,0 +1,10 @@
+source:
+  repoURL: 'https://github.com/evtr/argocdlinkerd'
+  path: emojivoto
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: emojivoto
+project: default
+syncPolicy: {}
+
