@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: emojivoto
+  name: redis-simple
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   source:
     repoURL: 'https://github.com/evtr/argocdlinkerd'
-    path: emojivoto
+    path: guestbook/simple-redis
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: emojivoto
+    namespace: guestbook
   project: default
   syncPolicy: {}
 
