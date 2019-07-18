@@ -39,5 +39,8 @@ Der er lavet en release "vlinkerd-test-1" som kan deployes: Slet først applikat
 Installer nu applikationen igen (men sæt vlinkerd-test-1 ind i stedet for HEAD).
 
 Nu kan man både se at antallet af containere i emojivoto pods er stedet fra 1 til 2 (injection af sidecar).
-Derudover kan man se en masse interessante ting i linkerd dashboardet.
+Derudover kan man se en masse interessante ting i linkerd dashboardet:
+
+![emojivoto in linkerd dashboard](images/emojivoto_in_dashboard.png)
+ 	
 
