@@ -15,6 +15,7 @@ For at komme igang skal argocd installeres. Der er endnu ikke ansible scripts ti
 2. Opret ingress regel: *kubectl apply -n argocd -f https://raw.githubusercontent.com/evtr/argocdlinkerd/master/argocdbootstrap/argocd-ingress.yml*
 
 Argo CD er derefter tilgængelig her: https://argocd.kitkube.dk/
+
 Brugernavn er "admin" og password er pod navnet for Argo CD API serveren (kan også hentes ud med: *kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name | cut -d'/' -f 2*).
 
 ## Installation af Linkerd
