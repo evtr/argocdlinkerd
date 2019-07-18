@@ -28,3 +28,19 @@ Linkerd dashboard er tilgængeligt her: http://dashboard.kitkube.dk/overview (cr
 Du kan nu installere en testapplikation på clusteret ved at sætte den op i Argo CD:
 
 ![setup testapplikation](images/argocd-emojivoto.png)
+
+Du kan tilgå applikationen: http://emojivoto.kitkube.dk/
+
+Hvis du kigger i linkerd dashboard, så ses det, at "emojivoto" applikationen ikke er meshed.
+
+Dette kan fixes, ved at sætte annotationen *linkerd.io/inject: enabled* på f.eks. namespacet emojivoto.
+
+Der er lavet en release "vlinkerd-test-1" som kan deployes: Slet først applikationen i argocd (med cascade).
+Installer nu applikationen igen (men sæt vlinkerd-test-1 ind i stedet for HEAD).
+
+Nu kan man både se at antallet af containere i emojivoto pods er stedet fra 1 til 2 (injection af sidecar).
+Derudover kan man se en masse interessante ting i linkerd dashboardet:
+
+![emojivoto in linkerd dashboard](images/emojivoto_in_dashboard.png)
+ 	
+
