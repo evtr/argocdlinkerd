@@ -27,4 +27,4 @@ Linkerd dashboard er tilgængeligt her: http://dashboard.kitkube.dk/overview (cr
 ## Installation af testapplikation
 Du kan nu installere en testapplikation på clusteret ved at sætte den op i Argo CD:
 
-![setup testapplikation]({{ site.url }}/images/argocd-emojivoto.png)
+![setup testapplikation](images/argocd-emojivoto.png)
