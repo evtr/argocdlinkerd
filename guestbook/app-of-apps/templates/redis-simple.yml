@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: redis-simple
+  namespace: guestbook
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -10,8 +11,8 @@ spec:
     path: guestbook/simple-redis
     targetRevision: HEAD
   destination:
-    server: 'https://kubernetes.default.svc'
     namespace: guestbook
+    server: {{ .Values.spec.destination.server }}
   project: default
   syncPolicy: {}
 
