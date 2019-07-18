@@ -22,4 +22,4 @@ Brugernavn er "admin" og password er pod navnet for Argo CD API serveren (kan og
 1. Installér Linkerd: Følg https://linkerd.io/2/getting-started/ trin 0-3.
 2. Opret ingress regel: *kubectl apply -n linkerd -f https://raw.githubusercontent.com/evtr/argocdlinkerd/master/linkerdbootstrap/linkerd-web-ingress.yml*
 
-Linkerd dashboard er tilgængeligt her: https://dashboard.kitkube.dk/ (credentials: admin/admin)
+Linkerd dashboard er tilgængeligt her: http://dashboard.kitkube.dk/overview (credentials: admin/admin)
