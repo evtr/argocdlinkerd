@@ -1,6 +1,8 @@
 # Om
 
-Dette projekt viser, hvordan argocd kan bruges som "deployment agent" på et Kitkube miljø. Dette projekt er kun tiltænkt udviklinsmiljøet.
+Dette projekt viser, hvordan argocd kan bruges som "deployment agent" på et Kitkube miljø. 
+Det viser også, hvordan linkerd kan anvendes som service mesh.
+Dette projekt er kun tiltænkt udviklinsmiljøet.
 
 ## Prerequisites
 Du skal bruge:
