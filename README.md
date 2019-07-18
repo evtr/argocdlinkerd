@@ -11,3 +11,5 @@ For at komme igang skal argocd installeres. Der er endnu ikke ansible scripts ti
 
 1. Installér Argocd: I https://argoproj.github.io/argo-cd/getting_started/ skal du udføre trin 1 i vedledningen dvs. "Install Argo CD". I dette punkt oprettes et namespace og argocd installeres.
 2. Opret ingress regel: kubectl apply -n argocd -f https://raw.githubusercontent.com/evtr/argocdlinkerd/master/argocdbootstrap/argocd-ingress.yml
+
+Argo CD er derefter tilgængelig her: https://argocd.kitkube.dk/ (brugernavn: admin og password er pod navnet for Argo CD API serveren.
