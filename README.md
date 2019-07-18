@@ -35,5 +35,9 @@ Hvis du kigger i linkerd dashboard, så ses det, at "emojivoto" applikationen ik
 
 Dette kan fixes, ved at sætte annotationen *linkerd.io/inject: enabled* på f.eks. namespacet emojivoto.
 
-Der er lavet en release "linkerd-test-1" som kan deployes: Slet først applikationen i argocd (med cascade).
-Installer nu applikationen igen (men sæt 
+Der er lavet en release "vlinkerd-test-1" som kan deployes: Slet først applikationen i argocd (med cascade).
+Installer nu applikationen igen (men sæt vlinkerd-test-1 ind i stedet for HEAD).
+
+Nu kan man både se at antallet af containere i emojivoto pods er stedet fra 1 til 2 (injection af sidecar).
+Derudover kan man se en masse interessante ting i linkerd dashboardet.
+
