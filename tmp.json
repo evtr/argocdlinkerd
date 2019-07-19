@@ -1,0 +1,19 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "creationTimestamp": "2019-07-19T06:54:30Z",
+        "deletionTimestamp": "2019-07-19T06:56:43Z",
+        "name": "gbook",
+        "resourceVersion": "286435",
+        "selfLink": "/api/v1/namespaces/gbook",
+        "uid": "0ee6e168-a9f2-11e9-bbeb-02e55a567537"
+    },
+    "spec": {
+        "finalizers": [
+        ]
+    },
+    "status": {
+        "phase": "Terminating"
+    }
+}
