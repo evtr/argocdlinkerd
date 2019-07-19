@@ -10,7 +10,7 @@ spec:
     path: guestbook/simple-redis
     targetRevision: HEAD
   destination:
-    namespace: guestbook
+    namespace: gbook
     server: 'https://kubernetes.default.svc'
   project: default
   syncPolicy: {}
